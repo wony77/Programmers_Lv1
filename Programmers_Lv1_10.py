@@ -21,5 +21,15 @@ def solution(absolutes,signs):
 
 abs = list(map(int,input('정수를 입력해 주세요: ').split()))
 sign = input('음수(False) / 양수(True): ').split()
-print(sign)
 print(solution(abs,sign))
+
+# 다른 방식의 풀이 
+def solution(absolutes, signs):
+    return sum(absolutes if sign else -absolutes for absolutes, sign in zip(absolutes, signs))
+# 해석 
+# for absolutes, sign in zip(absolutes, signs) for 문을 한번에 여러개 돌리겠다는  zip함수 이용
+# ex) [4, 7, 12] [true, false, true] -> 4,true ... 12,true 
+# absolutes, sign << 에 위의 순서대로 하나씩 할당되어줍니다.
+# if sign: < 이것은 만약 sign == True 일때 동작 하겠다는 의미이고, 
+# True 일때 sum 함수를 통해 absolutes를 더하고 False일때는 -absolutes를 더하라는 의미 입니다.
+# 해석 끝~
