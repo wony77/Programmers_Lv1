@@ -21,5 +21,4 @@ def solution(absolutes,signs):
 
 abs = list(map(int,input('정수를 입력해 주세요: ').split()))
 sign = input('음수(False) / 양수(True): ').split()
-print(sign)
 print(solution(abs,sign))
