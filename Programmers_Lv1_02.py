@@ -54,6 +54,7 @@ def solution (Phone_number,hand_RL):
         # 거리는 계속 사용해야 하므로 초기화 시켜줍니다.            
         L_Distance = 0
         R_Distance = 0
+    # .join으로 문자를 합쳐줍니다.
     answer = "".join(KeyPush)
     return answer
 

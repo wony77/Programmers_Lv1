@@ -1,5 +1,5 @@
 # 프로그래머스 Lv1 신규 아이디 추천
-def Solution(new_id):
+def solution(new_id):
      # 1단계 대문자 소문자로 변환
      new_id = new_id.lower()
 
@@ -40,4 +40,4 @@ def Solution(new_id):
      return answer
 
 user_id = input()
-print(Solution(user_id))
+print(solution(user_id))
